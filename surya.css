@@ -1,0 +1,312 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+    background-color: cadetblue;
+    height: auto;
+
+    /* position: fixed; */
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-evenly;
+    height: 30px;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+li{
+    
+    list-style-type: none;
+    /* background-color: brown; */
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+li:hover{
+    text-decoration:underline;
+    background-color: gold;
+    color: black;
+    transition: 0.7S;
+    transform: translateY(-5px);
+}
+.home{
+    text-decoration: none;
+
+}
+.port{
+    background-color: brown;
+    color: black;
+    height: 30px;
+    padding: 30px;
+    text-shadow: 2px 2px rgb(59, 205, 15);
+}
+.hi{
+    margin-left: 3%;
+    margin-top: 8%;
+    color:darkred;
+
+}
+.title-name{
+    margin-left: 5%;
+    color: rgb(179, 176, 8);
+    overflow: hidden;
+    border-right: .15rem;
+    animation: typing 4s steps(40, end), blink-caret .75s infinite;
+    white-space: nowrap;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.mern-dev{
+    margin-left: 5%;
+    overflow: hidden;
+    border-right: .15rem;
+    animation: typing 4s steps(40, end), blink-caret .75s infinite;
+    white-space: nowrap;
+    color: white;
+
+}
+.skills{
+    margin-left: 5%;
+    color:white;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-left: 15%;
+    background-color: gold;
+    font-weight: bold;
+}
+button:hover{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+.main-dev {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    
+}
+.main-one{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 49%;
+    margin: 5px;
+    /* border-left: 5px solid red; */
+
+}
+#main-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid red;
+}
+.img{
+    /* border: 2px solid red; */
+    background-color: black;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    float: inline-end;
+    /* animation: image 3s ease-in  infinite left; */
+}
+.animation-Img{
+    left: 100px;
+    animation:image 1s ease-in-out forwards;
+}
+@keyframes image {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+
+.foter{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin-top: 5px;
+    justify-content: space-evenly;
+    background-color: gold;
+    font-weight: bold;
+    /* height: 40px; */
+}
+#bar{
+    margin-top: 20px;
+}
+#main-left{
+    border-left: 5px solid red;
+}
+@media (max-width:600px) {
+    .port{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .main-dev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .foter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: red;
+    }
+
+}
+
+/* About Styling */
+.about{
+    color: white;
+}
+
+.main-two{
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: cyan;
+
+}
+.sub-two{
+    border: 2px solid black;
+    /* height: 300px; */
+    height: auto;
+    width: 50%;
+    margin: 5px;
+    font-family: sans-serif;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    background-color:red;
+    color: gold;
+
+}
+.info{
+    /* background-color: brown; */
+    color: black;
+}
+.summary{
+    background-color: black;
+    color: white;
+}
+
+#animation-div-one{
+    left: 0px;
+    animation: divOne 2 ease-in infinite ;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+
+}
+#animation-div-two{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
+#animation-div-three{
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+}
+@keyframes divOne {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+    
+}
+
+/* Skills Stylling */
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+/* Individual Skill Boxes */
+.sub-skills {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px;
+    margin: 5px; 
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    font-size: 1rem; 
+    transition: transform 0.3s, background-color 0.3s; 
+}
+.sub-skills:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+.main-projects{
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* Project css */
+
+.main-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+.sub-project-div{
+    height: 150px;
+    width: 25%;
+    border: 2px solid black;
+    margin: 10px;
+}
+.img-one{
+    background-image:url("./images/animation.img.jpg") ;
+    background-size: cover;
+}
+
+/* Contact css */
+
+.contact{
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}

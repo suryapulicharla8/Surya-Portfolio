@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.image-container {
+    position: relative;
+}
+
+.moving-image {
+    position: absolute;
+    margin-left: -100px;
+    animation: moveRight 3s forwards; /* Adjust duration as needed */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-400px);
+    }
+}
+
